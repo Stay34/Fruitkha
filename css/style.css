@@ -1,0 +1,168 @@
+:root{
+    --darkblue:#051922;
+    --beige:#f5f5f5;
+    --darkbeige:#e5e5e7;
+    --orange:#f28123;
+}
+.vh-45{height: 45vh;}
+.vh-60{height: 60vh;}
+.vh-55{height: 55vh;}
+.vh-120{height: 120vh;}
+.bg-beige{background-color: var(--beige);}
+.bg-darkbeige{background-color: var(--darkbeige);}
+
+.py-6 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+body{
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+/*header*/
+header{
+    background:url('../img/hero-bg.jpg.jpeg') no-repeat center center/cover;
+    height:100vh;
+    position: relative;
+}
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;    
+    background-color: rgb(7, 33, 46);
+    opacity: 0.6;
+    z-index: 1;
+}
+header nav,
+header .container,
+.header-content{
+    position: relative;
+    z-index: 2;
+}
+.navbar-toggler {
+    border: none !important;  
+    border-radius: 1px;   
+    background-color: var(--orange) !important; 
+    box-shadow: none !important;    
+    padding: 0.2rem 0.2rem;     
+}
+header nav ul li a:hover, nav i:hover{
+    color:var(--orange)!important;
+}
+.style-nav{margin-top:0.8em;}
+.style-nav li{
+    background-color: #141e29 !important;
+    border-bottom: 1px solid #ffffff91;
+}
+.style-nav li.cart-item {border-bottom: none !important;}
+.style-nav li a{
+    font-weight: 400 !important;
+    letter-spacing: 0.3px;
+    font-family: var(--font-family-sans-serif) !important;
+    text-transform: uppercase;
+    font-size:15px !important;
+    margin-left: 3em;
+    color: #fff;
+}
+.style-nav #cart{margin-bottom: 0.6em;}
+#cart{margin-top: 1em;}
+#cart:hover{color:var(--orange)!important;}
+.header-content{height: 80vh;}
+.header-content p{
+    color: var(--orange);
+        font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 15px;
+}
+.header-content h1{
+    font-weight: 700;
+    line-height: 2.5;
+    color: #fff;
+}
+.btn1{
+    color: #fff;
+    background-color: var(--orange);
+    border-radius: 1.5em;
+    padding: 0.6em 1em;
+}
+.btn1:hover{
+    background-color: var(--darkblue);
+    color: var(--orange);
+    transition: 0.3s;
+}
+#contact-us-btn{
+    color:#fff;
+    background-color:transparent;
+    border:2px solid var(--orange);
+    border-radius: 1.5em;
+    padding: 0.5em 1.2em;
+}
+#contact-us-btn:hover{
+    background-color: var(--orange);
+    transition: 0.3s;
+}
+.header-btns{flex-direction: column; width: 80%;}
+.header-btns a{
+    text-align: center;
+    display: inline-block;   
+    width: auto;   
+}
+#mainNavbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+/*Main start*/
+#img-72 img{max-width: 72px;max-height: 68px;}
+.text-design1 h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.text-design1 p{
+    color: #333537c9;
+}
+/*Our Products*/
+.block-style{
+    border: none !important;
+    border-radius: 5px !important;
+    box-shadow:0 0 8px rgba(0, 0, 0, 0.178)!important;
+}
+.text-design2 h5{font-weight: 700; font-size: 23px;}
+.text-design2 h4{font-weight: 700; font-size:25px; margin:0.6em;}
+.btn1{border: none !important;}
+/*Footer*/
+#footer1{border-bottom:1px solid #625f5f;}
+@media only screen and (min-width:768px){
+    /*Header*/
+    .header-content h1{font-size: 3em;}
+    .header-btns{flex-direction: row;width:initial;}
+}
+@media only screen and (min-width:992px){
+    /*Header*/
+    #cart{display: none;}
+    .style-nav li{
+        background-color: transparent !important;
+        border-bottom: 1px solid #ffffff00;
+    }
+    .style-nav{margin-top:initial;}
+    .style-nav li a{
+        font-weight: 700 !important;
+        font-size:17px !important;
+        letter-spacing: 0.8px;
+        font-family: var(--font-family-monospace) !important;
+        margin-right:20px !important;
+        margin-left:initial;
+        text-transform: none;
+    }
+    #mainNavbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--darkblue); 
+        z-index: 1030; 
+    }
+    /*Main start*/
+}
